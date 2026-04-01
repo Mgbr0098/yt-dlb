@@ -4,8 +4,38 @@ Uma ferramenta compatível com `yt-dlp` baseada em Python, projetada para reexpo
 
 ## Instalação
 
+### 1) Instalação no Linux/macOS/Windows
+
 ```bash
+git clone https://github.com/Mgbr0098/yt-dlb.git
+cd yt-dlb
+python -m pip install --upgrade pip
 python -m pip install -e .
+```
+
+Depois disso, você tem:
+- `yt-dlb`
+- `yt-dlb-interactive`
+
+### 2) Instalação no Termux (Android)
+
+```bash
+pkg update -y && pkg upgrade -y
+pkg install python git ffmpeg -y
+termux-setup-storage
+cd ~
+git clone https://github.com/Mgbr0098/yt-dlb.git
+cd yt-dlb
+python -m pip install --upgrade pip
+python -m pip install -e .
+```
+
+### 3) Verificar instalação
+
+```bash
+yt-dlb --version
+yt-dlb --help
+yt-dlb-interactive --help
 ```
 
 ## Uso
